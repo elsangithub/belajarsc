@@ -2,8 +2,8 @@
 # Debian 9 & 10 64bit
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
-# By Akbar Maulana
-# My Telegram : https://t.me/Akbar218
+# By elsande
+# My Telegram : https://t.me/elsan11
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -24,14 +24,14 @@ echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
+echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/elsan12"
+echo -e "${NC}${LIGHT}WhatsApp : 08000000"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/elsan11"
 exit 0
 fi
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ipsec"
+elsanvpn="raw.githubusercontent.com/elsangithub/belajarsc/main/ipsec"
 
 VPN_IPSEC_PSK='myvpn'
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
@@ -305,12 +305,12 @@ mkdir -p /run/pluto
 service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
-wget -O /usr/bin/addl2tp https://${akbarvpn}/addl2tp.sh && chmod +x /usr/bin/addl2tp
-wget -O /usr/bin/dell2tp https://${akbarvpn}/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/addpptp https://${akbarvpn}/addpptp.sh && chmod +x /usr/bin/addpptp
-wget -O /usr/bin/delpptp https://${akbarvpn}/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/renewpptp https://${akbarvpn}/renewpptp.sh && chmod +x /usr/bin/renewpptp
-wget -O /usr/bin/renewl2tp https://${akbarvpn}/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
-touch /var/lib/akbarstorevpn/data-user-l2tp
-touch /var/lib/akbarstorevpn/data-user-pptp
+wget -O /usr/bin/addl2tp https://${elsanvpn}/addl2tp.sh && chmod +x /usr/bin/addl2tp
+wget -O /usr/bin/dell2tp https://${elsanvpn}/dell2tp.sh && chmod +x /usr/bin/dell2tp
+wget -O /usr/bin/addpptp https://${elsanvpn}/addpptp.sh && chmod +x /usr/bin/addpptp
+wget -O /usr/bin/delpptp https://${elsanvpn}/delpptp.sh && chmod +x /usr/bin/delpptp
+wget -O /usr/bin/renewpptp https://${elsanvpn}/renewpptp.sh && chmod +x /usr/bin/renewpptp
+wget -O /usr/bin/renewl2tp https://${elsanvpn}/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
+touch /var/lib/elsanstorevpn/data-user-l2tp
+touch /var/lib/elsanstorevpn/data-user-pptp
 rm -f /root/ipsec.sh
