@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/elsan11
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -20,9 +20,9 @@ echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
+echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/elsan12"
+echo -e "${NC}${LIGHT}WhatsApp : 0815000000"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/elsan11"
 exit 0
 fi
 clear
@@ -39,7 +39,7 @@ http=2944
 else
 http="$((lastport2+1))"
 fi
-source /var/lib/akbarstorevpn/ipvps.conf
+source /var/lib/elsanstorevpn/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -122,4 +122,4 @@ echo -e "Link TLS    : $linkss1"
 echo -e "========================="
 echo -e "Link No TLS : $linkss2"
 echo -e "========================="
-echo -e "Script By Akbar Maulana"
+echo -e "Script By elsande"
