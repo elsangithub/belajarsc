@@ -21,7 +21,7 @@ else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/elsan12"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
+echo -e "${NC}${LIGHT}WhatsApp : 081500000000"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/elsan11"
 exit 0
 fi
@@ -31,7 +31,7 @@ PUBLIC_IP=$(wget -qO- ipinfo.io/ip);
 else
 PUBLIC_IP=$IP
 fi
-source /var/lib/akbarstorevpn/ipvps.conf
+source /var/lib/elsanstorevpn/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
