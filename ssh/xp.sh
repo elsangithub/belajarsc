@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/elsan11
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -20,37 +20,37 @@ echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
+echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/elsan12"
 echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/elsan11"
 exit 0
 fi
 clear
-data=( `cat /var/lib/akbarstorevpn/data-user-l2tp | grep '^###' | cut -d ' ' -f 2`);
+data=( `cat /var/lib/elsanstorevpn/data-user-l2tp | grep '^###' | cut -d ' ' -f 2`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^### $user" "/var/lib/akbarstorevpn/data-user-l2tp" | cut -d ' ' -f 3)
+exp=$(grep -w "^### $user" "/var/lib/elsanstorevpn/data-user-l2tp" | cut -d ' ' -f 3)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
 if [[ "$exp2" = "0" ]]; then
-sed -i "/^### $user $exp/d" "/var/lib/akbarstorevp/data-user-l2tp"
+sed -i "/^### $user $exp/d" "/var/lib/elsanstorevp/data-user-l2tp"
 sed -i '/^"'"$user"'" l2tpd/d' /etc/ppp/chap-secrets
 sed -i '/^'"$user"':\$1\$/d' /etc/ipsec.d/passwd
 chmod 600 /etc/ppp/chap-secrets* /etc/ipsec.d/passwd*
 fi
 done
-data=( `cat /var/lib/akbarstorevpn/data-user-pptp | grep '^###' | cut -d ' ' -f 2`);
+data=( `cat /var/lib/elsanstorevpn/data-user-pptp | grep '^###' | cut -d ' ' -f 2`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^### $user" "/var/lib/akbarstorevpn/data-user-pptp" | cut -d ' ' -f 3)
+exp=$(grep -w "^### $user" "/var/lib/elsanstorevpn/data-user-pptp" | cut -d ' ' -f 3)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
 if [[ "$exp2" = "0" ]]; then
-sed -i "/^### $user $exp/d" "/var/lib/akbarstorevpn/data-user-pptp"
+sed -i "/^### $user $exp/d" "/var/lib/elsanstorevpn/data-user-pptp"
 sed -i '/^"'"$user"'" pptpd/d' /etc/ppp/chap-secrets
 chmod 600 /etc/ppp/chap-secrets*
 fi
@@ -89,16 +89,16 @@ cd
 fi
 done
 /etc/init.d/ssrmu restart
-data=( `cat /var/lib/akbarstorevpn/data-user-sstp | grep '^###' | cut -d ' ' -f 2`);
+data=( `cat /var/lib/elsanstorevpn/data-user-sstp | grep '^###' | cut -d ' ' -f 2`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^### $user" "/var/lib/akbarstorevpn/data-user-sstp" | cut -d ' ' -f 3)
+exp=$(grep -w "^### $user" "/var/lib/elsanstorevpn/data-user-sstp" | cut -d ' ' -f 3)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
 if [[ "$exp2" = "0" ]]; then
-sed -i "/^### $user $exp/d" "/var/lib/akbarstorevpn/data-user-sstp"
+sed -i "/^### $user $exp/d" "/var/lib/elsanstorevpn/data-user-sstp"
 sed -i '/^'"$user"'/d' /home/sstp/sstp_account
 fi
 done
