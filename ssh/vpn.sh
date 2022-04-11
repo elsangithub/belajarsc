@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/elsan11
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -20,15 +20,15 @@ echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
+echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/elsan12"
+echo -e "${NC}${LIGHT}WhatsApp : 0815000000"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/elsan11"
 exit 0
 fi
 # By Akbar Maulana
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ssh"
+elsanvpn="raw.githubusercontent.com/elsangithub/belajarsc/main/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
@@ -42,7 +42,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://${akbarvpn}/vpn.zip
+wget https://${elsanvpn}/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
